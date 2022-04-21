@@ -9,3 +9,11 @@ spring:
     port: 5672
     username: kndoll
     password: doll
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
