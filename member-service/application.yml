@@ -1,1 +1,23 @@
-.
+server:
+  port: 8089
+spring:
+  config:
+    import: "optional:configserver:http://localhost:8088/"
+  cloud:
+    config:
+      name: config
+      profile: stg
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: kndoll
+    password: doll
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: busrefresh
+  endpoint:
+    shutdown:
+      enabled: true
