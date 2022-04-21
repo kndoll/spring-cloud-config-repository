@@ -1,17 +1,2 @@
-your.name: "my name"
-server:
-  port: 8089
-spring:
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: kndoll
-    password: doll
-management:
-  endpoints:
-    web:
-      exposure:
-        include: busrefresh
-  endpoint:
-    shutdown:
-      enabled: true
+your:
+  name: "my name!!!"
